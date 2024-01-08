@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function display(String)
+	{
+		let w=String.split(' ');
+		for(let i=0;i<w.length;i++)
+		{
+			w[i]=w[i].charAt(0).toUpperCase()+w[i].slice(1);
+	}
+		return w.join(',');
+	
+	}
+	let String='chandra mouli yadav mekala';
+	let result=display(String);
+	document.write(result);
+</script>
+</body>
+</html>

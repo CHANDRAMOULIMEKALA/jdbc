@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> Change Evenet</h1>
+<input type="text" id='a' onchange="hello()"/>
+<p id="b"></p>
+<script>
+	function hello()
+	{
+		var ip=document.getElementById('a').value;
+		document.getElementById("b").innerText="Chanaged the value to:"+ip;
+	} 
+	</script>
+</body>
+</html>

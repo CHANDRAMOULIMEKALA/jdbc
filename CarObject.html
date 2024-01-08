@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function car(make,model,year)
+	{
+		this.make=make;
+		this.model=model;
+		this.year=year;
+	}
+	let c=new car("maruthi","maruthi18",2023);
+	let c1=new car("suziki","suziki19",2022);
+	document.write("<table boder=1px>");
+	document.write("<tr>");
+	document.write("<td>");
+	document.write(c.make+c.model+c.year);
+	//document.write(c1.make+c1.model+"--->"+c1.year);
+	document.write("</td>");
+	document.write("</tr>");
+	document.write("</table>");
+</script>
+</body>
+</html>

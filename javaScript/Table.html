@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function display()
+		{
+			var result="Multlipication table";
+
+			var num=document.getElementById("hello").value;
+			var result=document.getElementById("mul");
+			for(var i=1;i<=10;i++)
+			{
+				
+				result.innerHTML += num+" x "+i+" = "+num * i + "</br>";
+			}
+		}
+
+</script>
+</head>
+<body>
+<form>
+<h1>Multlipication table</h1>
+	Enter TableNo:<input type="number"  id='hello'>
+	<input type="button" onclick="display()" value="DisaplayTable">
+	<p id="mul"></p>
+</form>
+</body>
+</html>

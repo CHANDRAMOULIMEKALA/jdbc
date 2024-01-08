@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function display(a,char)
+	{
+		return a.map(function(String)
+		{
+			return String+char;
+		});
+	}
+	let arr=["Ram","Geetha","Mouli"];
+	let hello=display(arr,'@');
+	document.write(hello.join('--'));
+</script>
+</body>
+</html>

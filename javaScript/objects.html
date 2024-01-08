@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	var products=[{name:'A',price:'20'},{name:'B',price:'25'},{name:'C',price:'28'}];
+	function display(product)
+	{
+		return products.filter(function(product)
+		{
+			return product.price>=20 && product.price<=30;
+		});
+	}
+	var filterdispaly=display(products);
+	document.write("<h2> products informations</h2>");("<ul>")
+	document.write("<ul>");
+	filterdispaly.forEach(function(product))
+	{
+		document.write("<li>"+product.name+"-$"+product.price+"</li>");
+	}
+	document.write("</ul>")
+</script>
+</body>
+</html>

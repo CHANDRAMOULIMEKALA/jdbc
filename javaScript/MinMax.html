@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	let a=["mouli","i","love","you"];
+	let max=a.reduce(function(a,cv)
+	{
+		return cv.length>a.length ? cv :a;
+
+	},a[0]);
+	let min=a.reduce(function(b,cv)
+	{
+		return cv.length<b.length ? cv:b;
+	},a[0]);
+	document.write("Maximum length of given String is ---->"+max+"<br>");
+	document.write("Minumum length of given String is ---->"+min);
+</script>
+</body>
+</html>

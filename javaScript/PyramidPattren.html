@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style >
+		#a
+		{
+			background: yellow;
+		}
+		h1
+	{
+		background: red;
+		width:190px;
+	}
+	</style>
+</head>
+<body id='a'>
+	<h1>Bathukamma</h1>
+<script>
+	function pattren(value,char1)
+	{
+		let char='`';
+		for(let i=value;i>=1;i--)
+		{
+			for(let j=1;j<=i;j++)
+			{
+				document.write(char);
+
+			}
+			for(let k=i;k<=value;k++)
+			{
+				document.write(char1);
+			}
+			for(let m=value;m>i;m--)
+			{
+				document.write(char1);
+			}
+			document.write("<br>");
+		}
+	}
+	let result=pattren(25,'*');
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration here</title>
+</head>
+<body>
+	<h1>Student Registration</h1>
+	<form>
+		
+		Name:<input type="text" name="Name" placeholder="enter your name"></br>
+		Surname:<input type="text" name="Surname"></br>
+		Father'Name:<input type="text" name="Father"></br>
+		Gender:<input type="radio" name="Gender"><label>Male</label><input type="radio"  name="Gender"><label>Female</label><input type="radio" name="Gender"><label>Others</label></br>
+		Contact:<input type="tel" id="Contact" name="Contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required/></br>
+		Email:<input type="Email" name="Email"></br>
+		DOB<input type="date" name="DOB"></br>
+		Address:</br>
+		<textarea rows="5" cols="40" name="Address"></textarea></br>
+		<fieldset>
+			<legend>Acedimic Details</legend>
+			<h4>B.Tech</h4>
+			CollageName:<input type="text"name="Bclg">
+			Branch:
+			<select name="Dept">
+			<option>CSE</option>
+			<option>ECE</option>
+			<option>MECH</option>
+			<option>CIVIL</option>
+			<option>EEE</option>
+			</select>
+			PassingYear:<input type="number" name="Byear">
+			CGPA:<input type="number" name="Bcgpa">
+			blocks:<input type="number" name="BB"></br>
+			<h4>Intermidate</h4>
+			CollageName:<input type="text" name="Iclg">
+			Branch:
+			<select name="Group">
+				<option>MPC</option>
+				<option>BiPC</option>
+				<option>HEC</option>
+				<option>CEC</option>
+			</select >
+			PassingYear:<input type="number" name="Iyear">
+			CGPA:<input type="number" name="Icgpa"></br>
+			<h4>SSC</h4>
+			SchoolName:<input type="text" name="School">
+			Board:
+			<select name="Board">
+				<option>SSC</option>
+				<option>CBSC</option>
+			</select>
+			PassingYear:<input type="number" name="Syear">
+			CGPA:<input type="number" name="Scgpa"></br>
+		</fieldset>
+		<!-- <STRONG>LanguagesKnows:</STRONG></br>
+		<input type="checkbox"><label>Telugu</label><input type="checkbox"><label>English</label><input type="checkbox"><label>Hindhi</label></br> -->
+		<center>
+		<input type="submit" value="Enter">
+		</center>
+	</form>
+
+</body>
+</html>

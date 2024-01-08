@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#a
+		{
+			background: aqua;
+		}
+		h1
+		{
+			background: yellow;
+			width:130px;
+		}
+	</style>
+</head>
+<body id='a'>
+	<h1>Daimand</h1>
+<script>
+	function pattren(n,char)
+	{
+		let char1='_';
+		for(let i=1;i<=n;i++)
+		{
+			for(let j=n;j>=i;j--)
+			{
+				document.write(char1);
+			}
+			for(let k=1;k<=i;k++)
+			{
+				document.write(char);
+			}
+			for(let x=2;x<=i;x++)
+			{
+				document.write(char);
+			}
+			document.write("<br>");
+		}
+		for(let i=2;i<=n;i++)
+		{
+			for(let j=1;j<=i;j++)
+			{
+				document.write(char1);
+			}
+			for(let k=n;k>=i;k--)
+			{
+				document.write(char);
+			}
+			for(let x=n-1;x>=i;x--)
+			{
+				document.write(char);
+			}
+			document.write("<br>")
+		}
+	}
+	pattren(15,'*');
+</script>
+</body>
+</html>

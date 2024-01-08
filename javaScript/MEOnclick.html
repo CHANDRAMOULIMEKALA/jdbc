@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+<p id='a'>Welocme </p>
+<h1>Onclick
+	</h1>
+<button onclick="display()" style="background: red"> Click Me</button>
+<h2>ondblclick
+	</h2>
+<button ondblclick="display3()" style="background: yellow"> Click 2 times</button>
+<h3>OnMouseOut /// onmouseDown
+	</h3>
+<button id="targetDiv" onmouseout="display1()" onmousedown="display2()" style="background: aqua">hello Mouli</button>
+<script>
+	function display()
+	{
+		document.write("onClickedd!!!!!!!");
+	}
+	function display1()
+	{
+		document.write("onMouseOut here!!!!!!");
+
+	}
+	function  display2()
+	{
+		document.write("on MouseDown here!!!!!!!");
+
+	}
+function display3()
+	{
+		document.write("i think you clicl 2 times!!!!!!!");
+	}
+</script>
+</body>
+</html>

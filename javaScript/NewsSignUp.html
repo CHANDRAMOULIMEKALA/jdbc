@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<style type="text/css">
+		body
+		{
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: white;
+		}
+		.sign-up
+		{
+			width:400px;
+			height: 500px;
+			align-items: center;
+			background:violet;
+			justify-content: center;
+			display: flex;
+			box-shadow: 5px 5px 5px green;
+			border-radius: 20px;
+		}
+		h2
+		{
+			color:blue;
+		}
+		button
+		{
+			margin: 5px;
+			margin-top: 15px;
+			box-shadow: 2px 2px 2px blue; 
+			border-radius: 4px;
+			border: hidden;
+			background: yellow;
+		}
+		p
+		{
+			font-size: 13px;
+			color: red;
+		}
+		.input-box
+		{
+			background: navy;
+			color: yellow;
+			border-radius: 5px;
+			box-shadow: 2px 2px 2px yellow; 
+		}
+		
+	</style>
+	<script type="text/javascript">
+		function display()
+		{
+			alret("Your data should be Entered");
+		}
+		display();
+	</script>
+</head>
+<body>
+<div class="sign-up">
+	<form method="#">
+		<h2>SignUp</h2>
+		<lable>FirstName</lable>
+		<div>
+		<input class="input-box" type="text" placeholder="FirstName" required>
+	    </div>
+	    <lable>LastName</lable>
+		<div>
+		<input  class="input-box" type="text" placeholder="LastName" required>
+	    </div>
+	    <i class="fa-solid fa-envelope"></i><lable>Email</lable>
+		<div>
+		<input class="input-box" type="Email" placeholder="@gamil.com" required>
+	    </div>
+	    <i class="fa-regular fa-user"></i><label>UserName</lable>
+		<div>
+		<input class="input-box" type="text" placeholder="UserName" required>
+	    </div>
+	   <i class="fa-regular fa-lock"></i> <lable>Password</lable>
+		<div>
+		<input class="input-box" type="password" placeholder="password" required>
+	    </div>
+	   <i class="fa-solid fa-lock"></i><lable>Re-enterPassword</lable>
+		<div>
+		<input class="input-box" type="text" placeholder="strongpassword" required>
+	    </div>
+	    <button type="submit" onclick="display()">SignUp</button>
+	    <button type="Reset">Reset</button>
+	    <div>
+	    <p>Already have an Account<a href="NewsLogin.html">Loginhere..</a></p>
+	</div>
+	</form>
+</div>
+</body>
+</html>

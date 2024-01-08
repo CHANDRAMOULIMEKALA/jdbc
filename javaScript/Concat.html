@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function display(a,b)
+	{
+		let x=a.concat(b);
+		let y=x.filter(function(value,index)
+		{
+			return x.indexOf(value)===index;
+		});
+		return y;
+	}
+	let a=["app","raj","cap"];
+	let b=["cat","cap","tap"];
+	let con=display(a,b);
+	document.write(con.join('->'));
+</script>
+</body>
+</html>

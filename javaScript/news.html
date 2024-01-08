@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        button, input[type="reset"] {
+            margin-right: 10px;
+        }
+
+        .reset-submit-buttons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Web Page</h1>
+    </header>
+
+    <nav>
+        <a href="NewsLogin.html">Login</a>
+        <a href="NewsSignUp.html">Sign Up</a>
+        <a href="#support">Support</a>
+        <a href="#advertise">Advertise</a>
+    </nav>
+
+    <main>
+        <div class="content">
+            <!-- News Content Goes Here -->
+            <h2>Latest News</h2>
+            <p>This is where the latest news articles will be displayed.</p>
+        </div>
+
+        <div class="form-container" id="login">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="reset-submit-buttons">
+                    <button type="submit">Login</button>
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container" id="signup">
+            <h2>Sign Up</h2>
+            <form action="#" method="post">
+                <!-- Include fields for first name, last name, email, etc. as needed -->
+
+                <div class="reset-submit-buttons">
+                    <button type="submit">Sign Up</button>
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container" id="support">
+            <h2>Support - Raise a Complaint</h2>
+            <form action="#" method="post">
+                <!-- Include fields for name, phone number, email, home address, digital subscriber, complaint description, etc. -->
+
+                <div class="reset-submit-buttons">
+                    <button type="submit">Submit Complaint</button>
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container" id="advertise">
+            <h2>Advertise Your Business</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <!-- Include fields for company name, person name, phone number, advertisement details, etc. -->
+
+                <div class="reset-submit-buttons">
+                    <button type="submit">Submit Advertisement</button>
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

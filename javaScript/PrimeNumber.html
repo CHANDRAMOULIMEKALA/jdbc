@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function prime()
+	{
+		var n=parseInt(prompt("Enter number"));
+		var x=0;
+		for(var i=1;i<=n;i++)
+		{
+			if(n%i==0)
+			{
+				x++;
+			}
+		}
+		if(x==2)
+		{
+			document.write("Prime");
+		}
+		else
+		{
+			document.write(" not Prime");
+		}
+	}
+	prime();
+</script>
+</body>
+</html>

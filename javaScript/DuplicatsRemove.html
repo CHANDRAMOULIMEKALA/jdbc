@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function display(a)
+	{ 
+		document.write("let Start1 <br>");
+		var s="";
+		for(i=0;i<a.length;i++)			
+		{
+			var c=a[i];
+			var d=false;
+			for( j=0;j<a.length;j++)
+			{
+				if(c === s[j])
+				{
+					d=true;
+					break;
+				}
+			}
+			if(!d)
+			{
+				s+=c;
+
+			}
+		}
+		 document.write(s);
+		}
+	let a="jagan";
+	display(a);
+	
+</script>
+</body>
+</html>
